@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|c:\\users\\rozhd\\desktop\\\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u043F\u0440\u043E\u0433\u0438\\\u043B\u0430\u04312\\lab2\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|c:\\users\\rozhd\\desktop\\\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u043F\u0440\u043E\u0433\u0438\\\u043B\u0430\u04312\\lab2\\lab2\\menufunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\menufunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|c:\\users\\rozhd\\desktop\\\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u043F\u0440\u043E\u0433\u0438\\\u043B\u0430\u04312\\lab2\\lab2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|c:\\users\\rozhd\\desktop\\\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u043F\u0440\u043E\u0433\u0438\\\u043B\u0430\u04312\\lab2\\lab2\\combsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D1FDC-79B6-416D-971B-F0B25A5C550E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\combsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88C1802-A397-4523-9419-BE3AC07D1D1B}|Tests\\Tests.csproj|c:\\users\\rozhd\\desktop\\\u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u043F\u0440\u043E\u0433\u0438\\\u043B\u0430\u04312\\lab2\\tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88C1802-A397-4523-9419-BE3AC07D1D1B}|Tests\\Tests.csproj|solutionrelative:tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Tests\\Test1.cs",
+              "RelativeDocumentMoniker": "Tests\\Test1.cs",
+              "ToolTip": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Tests\\Test1.cs",
+              "RelativeToolTip": "Tests\\Test1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:54:13.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuFunc.cs",
+              "DocumentMoniker": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\MenuFunc.cs",
+              "RelativeDocumentMoniker": "Lab2\\MenuFunc.cs",
+              "ToolTip": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\MenuFunc.cs",
+              "RelativeToolTip": "Lab2\\MenuFunc.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAAwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:02:39.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\Menu.cs",
+              "RelativeDocumentMoniker": "Lab2\\Menu.cs",
+              "ToolTip": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\Menu.cs",
+              "RelativeToolTip": "Lab2\\Menu.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:28:09.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\Program.cs",
+              "RelativeDocumentMoniker": "Lab2\\Program.cs",
+              "ToolTip": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\Program.cs",
+              "RelativeToolTip": "Lab2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T19:51:51.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CombSort.cs",
+              "DocumentMoniker": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\CombSort.cs",
+              "RelativeDocumentMoniker": "Lab2\\CombSort.cs",
+              "ToolTip": "C:\\Users\\rozhd\\Desktop\\\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\\\u041F\u0440\u043E\u0433\u0438\\\u041B\u0430\u04312\\Lab2\\Lab2\\CombSort.cs",
+              "RelativeToolTip": "Lab2\\CombSort.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwBoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:31:57.135Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
