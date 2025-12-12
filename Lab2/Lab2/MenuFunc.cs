@@ -87,32 +87,39 @@ namespace Lab2
 
             public static void SaveToFile(int[] array, int[] array1)
             {
-               
-                try
+
+                if (ChoiceOfSLFile())
                 {
-                    if (ChoiceOfSLFile())
+                    while (true)
                     {
-                        string path = Path.Combine(AppContext.BaseDirectory, GetFileName());
-                        using (StreamWriter sw = new StreamWriter(path, false, new UTF8Encoding(true)))
+                        try
                         {
-                            sw.WriteLine ("Original array:");
-                            foreach (var number in array)
+                            string path = Path.Combine(AppContext.BaseDirectory, GetFileName());
+                            using (StreamWriter sw = new StreamWriter(path, false, new UTF8Encoding(true)))
                             {
-                                sw.Write(" " + number); // записываем каждое число с новой строки
+                                sw.WriteLine("Original array:");
+                                foreach (var number in array)
+                                {
+                                    sw.Write(" " + number); // записываем каждое число с новой строки
+                                }
+                                sw.WriteLine("\n Sorted array:");
+                                foreach (var number1 in array1)
+                                {
+                                    sw.Write(" " + number1); // записываем каждое число с новой строки
+                                }
+                            
                             }
-                            sw.WriteLine("\n Sorted array:");
-                            foreach (var number1 in array1)
-                            {
-                                sw.Write(" " + number1); // записываем каждое число с новой строки
-                            }
+
+                            Console.WriteLine($"Массив успешно сохранён в файл: {path}");
+                            break;
                         }
 
-                        Console.WriteLine($"Массив успешно сохранён в файл: {path}");
+
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Ошибка при сохранении файла: {ex.Message}");
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Ошибка при сохранении файла: {ex.Message}");
                 }
             }
 
