@@ -38,9 +38,9 @@ namespace Lab3.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0)
+            if (tbArrayOriginal.Text.Length > 0)
             {
-                if (TryGetArrayFromText(textBox1.Text, out int[] arr, out string err))
+                if (TryGetArrayFromText(tbArrayOriginal.Text, out int[] arr, out string err))
                 {
                     int[] sortedArr = Sort(arr);
                     textBox2.Text = string.Join(" ", sortedArr);
@@ -51,23 +51,23 @@ namespace Lab3.Forms
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton2.Checked)
+            if (rbntGenArray.Checked)
             {
                 label3.Visible = true;
                 label4.Visible = true;
                 label6.Visible = true;
-                textBox3.Visible = true;
-                textBox4.Visible = true;
-                textBox5.Visible = true;
+                tbMin.Visible = true;
+                tbMax.Visible = true;
+                tbDimension.Visible = true;
             }
             else
             {
                 label3.Visible = false;
                 label4.Visible = false;
                 label6.Visible = true;
-                textBox3.Visible = false;
-                textBox4.Visible = false;
-                textBox5.Visible = true;
+                tbMin.Visible = false;
+                tbMax.Visible = false;
+                tbDimension.Visible = true;
             }
         }
 
@@ -127,11 +127,11 @@ namespace Lab3.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (radioButton2.Checked)
+            if (rbntGenArray.Checked)
             {
-                int[] arr = new int[Convert.ToInt32(textBox5.Text)];
-                GenerateRandomArray(arr, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text));
-                textBox1.Text = string.Join(" ", arr);
+                int[] arr = new int[Convert.ToInt32(tbDimension.Text)];
+                GenerateRandomArray(arr, Convert.ToInt32(tbMin.Text), Convert.ToInt32(tbMax.Text));
+                tbArrayOriginal.Text = string.Join(" ", arr);
             }
         }
 
@@ -152,14 +152,14 @@ namespace Lab3.Forms
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            if (rbtnAdd.Checked)
             {
-                textBox1.Text = "";
+                tbArrayOriginal.Text = "";
                 textBox2.Text = "";
             }
             else
             {
-                textBox1.Text = "";
+                tbArrayOriginal.Text = "";
                 textBox2.Text = "";
             }
         }
@@ -167,17 +167,19 @@ namespace Lab3.Forms
         private void button3_Click(object sender, EventArgs e)
         {
 
-            if (TryGetArrayFromText(textBox1.Text, out int[] arr, out string err))
+            if (TryGetArrayFromText(tbArrayOriginal.Text, out int[] arr, out string err))
             {
                 TryGetArrayFromText(textBox2.Text, out int[] arrSort, out string errSort);
                 OperationWithDB.SaveOriginalArray(arr);
                 OperationWithDB.InsertArrayItems(arr);
                 if (OperationWithDB.SaveSortedArray(arrSort))
-                    if (OperationWithDB.InsertArrayItemsSort(arrSort))   
+                    if (OperationWithDB.InsertArrayItemsSort(arrSort))
                         MessageBox.Show("Успешно сохранено!", "Успешно!");
-                        Close();
+                Close();
 
             }
         }
+
+       
     }
 }

@@ -20,8 +20,7 @@ namespace Lab3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Aut aut = new Aut();
-            aut.Show();
+            new Aut().Show();
             Close();
         }
 
