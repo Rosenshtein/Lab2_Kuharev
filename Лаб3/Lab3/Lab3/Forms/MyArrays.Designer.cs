@@ -85,7 +85,6 @@
             lblElements.Size = new Size(318, 46);
             lblElements.TabIndex = 13;
             lblElements.Text = "Элементы массива";
-            lblElements.Click += label1_Click;
             // 
             // array_id
             // 
@@ -124,7 +123,6 @@
             Name = "MyArrays";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Мои массивы || CombSortAPP";
-            FormClosed += MyArrays_FormClosed;
             Load += MyArrays_Load;
             ((System.ComponentModel.ISupportInitialize)dgwMyArrays).EndInit();
             ResumeLayout(false);

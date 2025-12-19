@@ -60,11 +60,6 @@ namespace Lab3
             ConnectToDB();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Aut_FormClosed(object sender, FormClosedEventArgs e)
         {
             CloseConnection(myConnect);

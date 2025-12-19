@@ -16,10 +16,5 @@ namespace Lab3.Forms
         {
             InitializeComponent();
         }
-
-        private void HowUse_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

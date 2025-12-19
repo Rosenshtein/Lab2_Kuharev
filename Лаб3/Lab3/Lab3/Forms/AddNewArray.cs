@@ -199,10 +199,5 @@ namespace Lab3.Forms
                 MessageBox.Show("Заполните массив", "Ошибка!");
             }
         }
-
-        private void AddNewArray_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

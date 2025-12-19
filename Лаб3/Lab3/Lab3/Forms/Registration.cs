@@ -45,7 +45,7 @@ namespace Lab3
                 {
                     if (Registration(LoginTB.Text, PasswordTB2.Text))
                         MessageBox.Show("Вы успешно зарегистрировались!", "Успешно!");
-                        CloseForm();
+                    CloseForm();
                 }
                 else
                 {
@@ -61,11 +61,6 @@ namespace Lab3
             else
                 MessageBox.Show("Пароли не совпадают!", "Ошибка!");
             return false;
-        }
-
-        private void Registration_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

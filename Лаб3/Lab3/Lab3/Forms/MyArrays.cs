@@ -25,22 +25,12 @@ namespace Lab3.Forms
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             if (dgwMyArrays.CurrentRow == null) return;
 
             int arrayId = Convert.ToInt32(dgwMyArrays.CurrentRow.Cells["array_id"].Value);
             tBoxElements.Text = LoadArrayValuesAsText(arrayId);
-        }
-
-        private void MyArrays_FormClosed(object sender, FormClosedEventArgs e)
-        {
-       
         }
     }
 }

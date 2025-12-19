@@ -51,7 +51,7 @@
             lblHelp.Location = new Point(4, 9);
             lblHelp.Margin = new Padding(4, 0, 4, 0);
             lblHelp.Name = "lblHelp";
-            lblHelp.Size = new Size(118, 36);
+            lblHelp.Size = new Size(152, 46);
             lblHelp.TabIndex = 14;
             lblHelp.Text = "Справка";
             // 
@@ -70,13 +70,12 @@
             HowUse.BackColor = Color.White;
             HowUse.Controls.Add(lblTextHowToUse);
             HowUse.Controls.Add(label4);
-            HowUse.Location = new Point(4, 30);
+            HowUse.Location = new Point(4, 29);
             HowUse.Name = "HowUse";
             HowUse.Padding = new Padding(3);
-            HowUse.Size = new Size(516, 297);
+            HowUse.Size = new Size(516, 298);
             HowUse.TabIndex = 1;
             HowUse.Text = "Как пользоваться";
-            HowUse.Click += HowUse_Click;
             // 
             // lblTextHowToUse
             // 
@@ -85,7 +84,7 @@
             lblTextHowToUse.Location = new Point(12, 12);
             lblTextHowToUse.Margin = new Padding(4, 0, 4, 0);
             lblTextHowToUse.Name = "lblTextHowToUse";
-            lblTextHowToUse.Size = new Size(494, 1456);
+            lblTextHowToUse.Size = new Size(617, 1820);
             lblTextHowToUse.TabIndex = 18;
             lblTextHowToUse.Text = resources.GetString("lblTextHowToUse.Text");
             // 
@@ -96,7 +95,7 @@
             label4.Location = new Point(4, 3);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(0, 28);
+            label4.Size = new Size(0, 35);
             label4.TabIndex = 17;
             // 
             // AboutProgramAndAuthor
@@ -104,10 +103,10 @@
             AboutProgramAndAuthor.BackColor = Color.White;
             AboutProgramAndAuthor.Controls.Add(label3);
             AboutProgramAndAuthor.Controls.Add(label2);
-            AboutProgramAndAuthor.Location = new Point(4, 30);
+            AboutProgramAndAuthor.Location = new Point(4, 36);
             AboutProgramAndAuthor.Name = "AboutProgramAndAuthor";
             AboutProgramAndAuthor.Padding = new Padding(3);
-            AboutProgramAndAuthor.Size = new Size(516, 297);
+            AboutProgramAndAuthor.Size = new Size(516, 291);
             AboutProgramAndAuthor.TabIndex = 0;
             AboutProgramAndAuthor.Text = "О программе";
             // 
@@ -118,7 +117,7 @@
             label3.Location = new Point(97, 31);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(318, 224);
+            label3.Size = new Size(395, 280);
             label3.TabIndex = 16;
             label3.Text = "Программа представляет собой\r\nучебное задание по созданию   \r\nграфического приложения\r\nс примером работы\r\nсортировки расчёской.\r\nВыполнил работу студент\r\nгруппы 444 Кухарев Н.А.\r\n2025 год";
             // 
@@ -129,7 +128,7 @@
             label2.Location = new Point(9, 24);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(0, 36);
+            label2.Size = new Size(0, 46);
             label2.TabIndex = 15;
             // 
             // AboutProgram
@@ -145,7 +144,7 @@
             // 
             // Help
             // 
-            AutoScaleDimensions = new SizeF(8F, 21F);
+            AutoScaleDimensions = new SizeF(11F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(524, 420);
