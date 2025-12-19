@@ -100,6 +100,7 @@
             // 
             // AboutProgramAndAuthor
             // 
+            AboutProgramAndAuthor.AutoScroll = true;
             AboutProgramAndAuthor.BackColor = Color.White;
             AboutProgramAndAuthor.Controls.Add(label3);
             AboutProgramAndAuthor.Controls.Add(label2);

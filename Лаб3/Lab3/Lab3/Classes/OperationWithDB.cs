@@ -138,7 +138,10 @@ namespace Lab3.Classes
 
                 bool ok = BCrypt.Net.BCrypt.Verify(password, hash);
                 if (!ok)
+                {
+                    MessageBox.Show("Неправильный пароль или логин!");
                     return false;
+                }
 
                 return true;
             }
