@@ -8,51 +8,50 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lab3.Classes;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using static Lab3.Classes.OperationWithDB;
 namespace Lab3
 {
     public partial class Registration : Form
     {
-        public Registration()
+        private Form _parent;
+
+        public Registration(Form parent)
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Aut().Show();
-            Close();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
+            _parent = parent;
         }
 
         private void Registration_FormClosed(object sender, FormClosedEventArgs e)
         {
             CloseForm();
         }
-        
+
         internal void CloseForm()
         {
-            Aut aut = new Aut();
-            aut.Show();
-            Close();
+            _parent.Show();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            PasswordTB1.UseSystemPasswordChar = !checkBox1.Checked;
-            PasswordTB2.UseSystemPasswordChar = !checkBox1.Checked;
+            PasswordTB1.UseSystemPasswordChar = !cBoxShowPassword.Checked;
+            PasswordTB2.UseSystemPasswordChar = !cBoxShowPassword.Checked;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (CheckPassTB() )
-               if (OperationWithDB.Reg(LoginTB.Text, PasswordTB2.Text))
-                  MessageBox.Show("Вы успешно зарестрировались!", "Успешно!");
-                  CloseForm();
+            if (CheckPassTB())
+                if (IsLoginFree(LoginTB.Text))
+                {
+                    if (Registration(LoginTB.Text, PasswordTB2.Text))
+                        MessageBox.Show("Вы успешно зарегистрировались!", "Успешно!");
+                        CloseForm();
+                }
+                else
+                {
+                    MessageBox.Show("Логин занят, попробуйте другой!", "Ошибка!");
+                }
+
         }
 
         internal bool CheckPassTB()
@@ -61,7 +60,12 @@ namespace Lab3
                 return true;
             else
                 MessageBox.Show("Пароли не совпадают!", "Ошибка!");
-                return false;
+            return false;
+        }
+
+        private void Registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

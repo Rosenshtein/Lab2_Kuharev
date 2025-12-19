@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewArray));
-            label5 = new Label();
+            lblAddNewArray = new Label();
             rbtnAdd = new RadioButton();
             rbntGenArray = new RadioButton();
             tbArrayOriginal = new TextBox();
             btnSort = new Button();
-            textBox2 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            tbSortedArray = new TextBox();
+            lblMyArray = new Label();
+            lblSortedArray = new Label();
+            lblMin = new Label();
             tbMin = new TextBox();
             tbMax = new TextBox();
-            label4 = new Label();
+            lblMax = new Label();
             btnGenerate = new Button();
             tbDimension = new TextBox();
-            label6 = new Label();
+            lblRazmer = new Label();
             btnSave = new Button();
             SuspendLayout();
             // 
-            // label5
+            // lblAddNewArray
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label5.Location = new Point(19, 35);
-            label5.Margin = new Padding(6, 0, 6, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(398, 46);
-            label5.TabIndex = 12;
-            label5.Text = "Добавить новый массив";
+            lblAddNewArray.AutoSize = true;
+            lblAddNewArray.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblAddNewArray.Location = new Point(19, 35);
+            lblAddNewArray.Margin = new Padding(6, 0, 6, 0);
+            lblAddNewArray.Name = "lblAddNewArray";
+            lblAddNewArray.Size = new Size(398, 46);
+            lblAddNewArray.TabIndex = 12;
+            lblAddNewArray.Text = "Добавить новый массив";
             // 
             // rbtnAdd
             // 
@@ -105,53 +105,53 @@
             btnSort.UseVisualStyleBackColor = true;
             btnSort.Click += button1_Click;
             // 
-            // textBox2
+            // tbSortedArray
             // 
-            textBox2.Location = new Point(324, 290);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(349, 134);
-            textBox2.TabIndex = 17;
+            tbSortedArray.Location = new Point(324, 290);
+            tbSortedArray.Multiline = true;
+            tbSortedArray.Name = "tbSortedArray";
+            tbSortedArray.ReadOnly = true;
+            tbSortedArray.Size = new Size(349, 134);
+            tbSortedArray.TabIndex = 17;
             // 
-            // label1
+            // lblMyArray
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(324, 71);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(212, 46);
-            label1.TabIndex = 18;
-            label1.Text = "Ваш массив:";
+            lblMyArray.AutoSize = true;
+            lblMyArray.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMyArray.Location = new Point(324, 71);
+            lblMyArray.Margin = new Padding(6, 0, 6, 0);
+            lblMyArray.Name = "lblMyArray";
+            lblMyArray.Size = new Size(212, 46);
+            lblMyArray.TabIndex = 18;
+            lblMyArray.Text = "Ваш массив:";
             // 
-            // label2
+            // lblSortedArray
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(324, 247);
-            label2.Margin = new Padding(6, 0, 6, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(313, 46);
-            label2.TabIndex = 19;
-            label2.Text = "Отсортированный:";
+            lblSortedArray.AutoSize = true;
+            lblSortedArray.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblSortedArray.Location = new Point(324, 247);
+            lblSortedArray.Margin = new Padding(6, 0, 6, 0);
+            lblSortedArray.Name = "lblSortedArray";
+            lblSortedArray.Size = new Size(313, 46);
+            lblSortedArray.TabIndex = 19;
+            lblSortedArray.Text = "Отсортированный:";
             // 
-            // label3
+            // lblMin
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(33, 171);
-            label3.Margin = new Padding(6, 0, 6, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(287, 32);
-            label3.TabIndex = 20;
-            label3.Text = "Минимальное значение:";
-            label3.Visible = false;
+            lblMin.AutoSize = true;
+            lblMin.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMin.Location = new Point(33, 171);
+            lblMin.Margin = new Padding(6, 0, 6, 0);
+            lblMin.Name = "lblMin";
+            lblMin.Size = new Size(287, 32);
+            lblMin.TabIndex = 20;
+            lblMin.Text = "Минимальное значение:";
+            lblMin.Visible = false;
             // 
             // tbMin
             // 
             tbMin.Location = new Point(37, 200);
-            tbMin.MaxLength = 10;
+            tbMin.MaxLength = 5;
             tbMin.Name = "tbMin";
             tbMin.Size = new Size(220, 39);
             tbMin.TabIndex = 21;
@@ -161,24 +161,24 @@
             // tbMax
             // 
             tbMax.Location = new Point(37, 275);
-            tbMax.MaxLength = 10;
+            tbMax.MaxLength = 5;
             tbMax.Name = "tbMax";
             tbMax.Size = new Size(220, 39);
             tbMax.TabIndex = 23;
             tbMax.Visible = false;
             tbMax.KeyPress += textBox4_KeyPress;
             // 
-            // label4
+            // lblMax
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(33, 246);
-            label4.Margin = new Padding(6, 0, 6, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(295, 32);
-            label4.TabIndex = 22;
-            label4.Text = "Максимальное значение:";
-            label4.Visible = false;
+            lblMax.AutoSize = true;
+            lblMax.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMax.Location = new Point(33, 246);
+            lblMax.Margin = new Padding(6, 0, 6, 0);
+            lblMax.Name = "lblMax";
+            lblMax.Size = new Size(295, 32);
+            lblMax.TabIndex = 22;
+            lblMax.Text = "Максимальное значение:";
+            lblMax.Visible = false;
             // 
             // btnGenerate
             // 
@@ -195,24 +195,24 @@
             // tbDimension
             // 
             tbDimension.Location = new Point(37, 351);
-            tbDimension.MaxLength = 10;
+            tbDimension.MaxLength = 4;
             tbDimension.Name = "tbDimension";
             tbDimension.Size = new Size(220, 39);
             tbDimension.TabIndex = 26;
             tbDimension.Visible = false;
             tbDimension.KeyPress += textBox5_KeyPress;
             // 
-            // label6
+            // lblRazmer
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label6.Location = new Point(33, 322);
-            label6.Margin = new Padding(6, 0, 6, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(156, 32);
-            label6.TabIndex = 25;
-            label6.Text = "Размерность";
-            label6.Visible = false;
+            lblRazmer.AutoSize = true;
+            lblRazmer.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblRazmer.Location = new Point(33, 322);
+            lblRazmer.Margin = new Padding(6, 0, 6, 0);
+            lblRazmer.Name = "lblRazmer";
+            lblRazmer.Size = new Size(156, 32);
+            lblRazmer.TabIndex = 25;
+            lblRazmer.Text = "Размерность";
+            lblRazmer.Visible = false;
             // 
             // btnSave
             // 
@@ -234,20 +234,20 @@
             ClientSize = new Size(738, 556);
             Controls.Add(btnSave);
             Controls.Add(tbDimension);
-            Controls.Add(label6);
+            Controls.Add(lblRazmer);
             Controls.Add(btnGenerate);
             Controls.Add(tbMax);
-            Controls.Add(label4);
+            Controls.Add(lblMax);
             Controls.Add(tbMin);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox2);
+            Controls.Add(lblMin);
+            Controls.Add(lblSortedArray);
+            Controls.Add(lblMyArray);
+            Controls.Add(tbSortedArray);
             Controls.Add(btnSort);
             Controls.Add(tbArrayOriginal);
             Controls.Add(rbntGenArray);
             Controls.Add(rbtnAdd);
-            Controls.Add(label5);
+            Controls.Add(lblAddNewArray);
             Font = new Font("Segoe UI Variable Display Semil", 14F);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 5, 4, 5);
@@ -260,21 +260,21 @@
 
         #endregion
 
-        private Label label5;
+        private Label lblAddNewArray;
         private RadioButton rbtnAdd;
         private RadioButton rbntGenArray;
         private TextBox tbArrayOriginal;
         private Button btnSort;
-        private TextBox textBox2;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private TextBox tbSortedArray;
+        private Label lblMyArray;
+        private Label lblSortedArray;
+        private Label lblMin;
         private TextBox tbMin;
         private TextBox tbMax;
-        private Label label4;
+        private Label lblMax;
         private Button btnGenerate;
         private TextBox tbDimension;
-        private Label label6;
+        private Label lblRazmer;
         private Button btnSave;
     }
 }

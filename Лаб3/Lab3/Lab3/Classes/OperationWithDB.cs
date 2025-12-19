@@ -111,7 +111,7 @@ namespace Lab3.Classes
             }
         }
 
-        internal static bool Aut(string login, string password)
+        internal static bool AutorizationMethod(string login, string password)
         {
 
             try
@@ -149,7 +149,28 @@ namespace Lab3.Classes
             }
         }
 
-        internal static bool Reg(string login, string password)
+        internal static bool IsLoginFree(string login)
+        {
+            try
+            {
+                string sql = @"SELECT COUNT(*) FROM users WHERE login = @login";
+
+                myCommand.CommandText = sql;
+                myCommand.Parameters.Clear();
+                myCommand.Parameters.AddWithValue("@login", login);
+
+                int count = Convert.ToInt32(myCommand.ExecuteScalar());
+
+                // если 0 — логин свободен
+                return count == 0;
+            }
+            catch
+            {
+                return false; // при ошибке считаем, что логин недоступен
+            }
+        }
+
+        internal static bool Registration(string login, string password)
         {
 
             try
@@ -177,6 +198,8 @@ namespace Lab3.Classes
             }
         }
 
+
+
         internal static bool UserHasArrays()
         {
             string sql = @" 
@@ -202,7 +225,11 @@ namespace Lab3.Classes
         {
             try
             {
-                string sql = @"SELECT array_id, array_role 
+                string sql = @"SELECT array_id,
+                CASE array_role
+                WHEN 'original' THEN 'Оригинальный'
+                WHEN 'sorted'   THEN 'Отсортированный'
+                END AS array_role
                 FROM arrays
                 WHERE user_id = @id;";
 

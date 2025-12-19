@@ -4,24 +4,23 @@ using static Lab3.Classes.OperationWithDB;
 
 namespace Lab3
 {
-    public partial class Aut : Form
+    public partial class Autorization : Form
     {
-        public Aut()
+        public Autorization()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Aut(LoginTB.Text, PasswordTB.Text.Trim()))
+            if (AutorizationMethod(LoginTB.Text, PasswordTB.Text.Trim()))
                 NextToMain();
         }
 
         internal void NextToMain()
         {
             Hide();
-            Menu menu = new Menu();
-            menu.ShowDialog();
+            new Menu().ShowDialog();
 
         }
 
@@ -32,9 +31,8 @@ namespace Lab3
 
         private void label4_Click(object sender, EventArgs e)
         {
-            Registration reg = new Registration();
-            Hide();
-            reg.ShowDialog();
+            new Registration(this).Show();
+            Hide();      
         }
 
         private void label4_MouseEnter(object sender, EventArgs e)
@@ -75,7 +73,7 @@ namespace Lab3
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            PasswordTB.UseSystemPasswordChar = !checkBox1.Checked;
+            PasswordTB.UseSystemPasswordChar = !checkBoxShowPassword.Checked;
         }
     }
 }

@@ -29,39 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
-            button2 = new Button();
-            label2 = new Label();
+            lblPassword = new Label();
             PasswordTB1 = new TextBox();
-            label1 = new Label();
+            lblLogin = new Label();
             LoginTB = new TextBox();
-            label3 = new Label();
+            lblRepeatPassword = new Label();
             PasswordTB2 = new TextBox();
-            button1 = new Button();
-            checkBox1 = new CheckBox();
+            btnRegistation = new Button();
+            cBoxShowPassword = new CheckBox();
             SuspendLayout();
             // 
-            // button2
+            // lblPassword
             // 
-            button2.Font = new Font("Segoe UI Variable Small Semilig", 14.25F);
-            button2.Location = new Point(27, 367);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(231, 37);
-            button2.TabIndex = 3;
-            button2.Text = "Назад";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Variable Small Semilig", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(28, 107);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 26);
-            label2.TabIndex = 10;
-            label2.Text = "Пароль";
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI Variable Small Semilig", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblPassword.Location = new Point(28, 107);
+            lblPassword.Margin = new Padding(4, 0, 4, 0);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(78, 26);
+            lblPassword.TabIndex = 10;
+            lblPassword.Text = "Пароль";
             // 
             // PasswordTB1
             // 
@@ -73,16 +60,16 @@
             PasswordTB1.TabIndex = 9;
             PasswordTB1.UseSystemPasswordChar = true;
             // 
-            // label1
+            // lblLogin
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Variable Small Semilig", 14.25F);
-            label1.Location = new Point(23, 25);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(65, 26);
-            label1.TabIndex = 8;
-            label1.Text = "Логин";
+            lblLogin.AutoSize = true;
+            lblLogin.Font = new Font("Segoe UI Variable Small Semilig", 14.25F);
+            lblLogin.Location = new Point(23, 25);
+            lblLogin.Margin = new Padding(4, 0, 4, 0);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(65, 26);
+            lblLogin.TabIndex = 8;
+            lblLogin.Text = "Логин";
             // 
             // LoginTB
             // 
@@ -93,16 +80,16 @@
             LoginTB.Size = new Size(232, 33);
             LoginTB.TabIndex = 7;
             // 
-            // label3
+            // lblRepeatPassword
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Variable Small Semilig", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(27, 184);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(174, 26);
-            label3.TabIndex = 12;
-            label3.Text = "Повторите пароль";
+            lblRepeatPassword.AutoSize = true;
+            lblRepeatPassword.Font = new Font("Segoe UI Variable Small Semilig", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblRepeatPassword.Location = new Point(27, 184);
+            lblRepeatPassword.Margin = new Padding(4, 0, 4, 0);
+            lblRepeatPassword.Name = "lblRepeatPassword";
+            lblRepeatPassword.Size = new Size(174, 26);
+            lblRepeatPassword.TabIndex = 12;
+            lblRepeatPassword.Text = "Повторите пароль";
             // 
             // PasswordTB2
             // 
@@ -113,48 +100,46 @@
             PasswordTB2.Size = new Size(232, 33);
             PasswordTB2.TabIndex = 11;
             PasswordTB2.UseSystemPasswordChar = true;
-            PasswordTB2.TextChanged += textBox3_TextChanged;
             // 
-            // button1
+            // btnRegistation
             // 
-            button1.Font = new Font("Segoe UI Variable Small Semilig", 14.25F);
-            button1.Location = new Point(26, 322);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(231, 37);
-            button1.TabIndex = 13;
-            button1.Text = "Зарегистрироваться";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnRegistation.Font = new Font("Segoe UI Variable Small Semilig", 14.25F);
+            btnRegistation.Location = new Point(26, 322);
+            btnRegistation.Margin = new Padding(4);
+            btnRegistation.Name = "btnRegistation";
+            btnRegistation.Size = new Size(231, 37);
+            btnRegistation.TabIndex = 13;
+            btnRegistation.Text = "Зарегистрироваться";
+            btnRegistation.UseVisualStyleBackColor = true;
+            btnRegistation.Click += button1_Click;
             // 
-            // checkBox1
+            // cBoxShowPassword
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            checkBox1.Location = new Point(28, 255);
-            checkBox1.Margin = new Padding(4);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(173, 30);
-            checkBox1.TabIndex = 14;
-            checkBox1.Text = "Показать пароль";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            cBoxShowPassword.AutoSize = true;
+            cBoxShowPassword.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            cBoxShowPassword.Location = new Point(28, 255);
+            cBoxShowPassword.Margin = new Padding(4);
+            cBoxShowPassword.Name = "cBoxShowPassword";
+            cBoxShowPassword.Size = new Size(173, 30);
+            cBoxShowPassword.TabIndex = 14;
+            cBoxShowPassword.Text = "Показать пароль";
+            cBoxShowPassword.UseVisualStyleBackColor = true;
+            cBoxShowPassword.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(292, 436);
-            Controls.Add(checkBox1);
-            Controls.Add(button1);
-            Controls.Add(label3);
+            ClientSize = new Size(295, 385);
+            Controls.Add(cBoxShowPassword);
+            Controls.Add(btnRegistation);
+            Controls.Add(lblRepeatPassword);
             Controls.Add(PasswordTB2);
-            Controls.Add(label2);
+            Controls.Add(lblPassword);
             Controls.Add(PasswordTB1);
-            Controls.Add(label1);
+            Controls.Add(lblLogin);
             Controls.Add(LoginTB);
-            Controls.Add(button2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
@@ -168,15 +153,13 @@
         }
 
         #endregion
-
-        private Button button2;
-        private Label label2;
+        private Label lblPassword;
         private TextBox PasswordTB1;
-        private Label label1;
+        private Label lblLogin;
         private TextBox LoginTB;
-        private Label label3;
+        private Label lblRepeatPassword;
         private TextBox PasswordTB2;
-        private Button button1;
-        private CheckBox checkBox1;
+        private Button btnRegistation;
+        private CheckBox cBoxShowPassword;
     }
 }

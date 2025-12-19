@@ -11,7 +11,7 @@ namespace Lab3.Classes
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Aut());
+            Application.Run(new Autorization());
         }
     }
 }

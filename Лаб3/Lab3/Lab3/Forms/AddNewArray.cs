@@ -38,12 +38,17 @@ namespace Lab3.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SortArray();
+        }
+
+        internal void SortArray()
+        {
             if (tbArrayOriginal.Text.Length > 0)
             {
                 if (TryGetArrayFromText(tbArrayOriginal.Text, out int[] arr, out string err))
                 {
                     int[] sortedArr = Sort(arr);
-                    textBox2.Text = string.Join(" ", sortedArr);
+                    tbSortedArray.Text = string.Join(" ", sortedArr);
                 }
             }
             else MessageBox.Show("Вы не ввели значения!", " :( ");
@@ -53,21 +58,21 @@ namespace Lab3.Forms
         {
             if (rbntGenArray.Checked)
             {
-                label3.Visible = true;
-                label4.Visible = true;
-                label6.Visible = true;
+                lblMin.Visible = true;
+                lblMax.Visible = true;
+                lblRazmer.Visible = true;
                 tbMin.Visible = true;
                 tbMax.Visible = true;
                 tbDimension.Visible = true;
             }
             else
             {
-                label3.Visible = false;
-                label4.Visible = false;
-                label6.Visible = true;
+                lblMin.Visible = false;
+                lblMax.Visible = false;
+                lblRazmer.Visible = false;
                 tbMin.Visible = false;
                 tbMax.Visible = false;
-                tbDimension.Visible = true;
+                tbDimension.Visible = false;
             }
         }
 
@@ -155,31 +160,49 @@ namespace Lab3.Forms
             if (rbtnAdd.Checked)
             {
                 tbArrayOriginal.Text = "";
-                textBox2.Text = "";
+                tbSortedArray.Text = "";
             }
             else
             {
                 tbArrayOriginal.Text = "";
-                textBox2.Text = "";
+                tbSortedArray.Text = "";
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            if (TryGetArrayFromText(tbArrayOriginal.Text, out int[] arr, out string err))
+            if (TryGetArrayFromText(tbArrayOriginal.Text, out int[] arr, out string err) && arr.Length != 0)
             {
-                TryGetArrayFromText(textBox2.Text, out int[] arrSort, out string errSort);
-                OperationWithDB.SaveOriginalArray(arr);
-                OperationWithDB.InsertArrayItems(arr);
-                if (OperationWithDB.SaveSortedArray(arrSort))
-                    if (OperationWithDB.InsertArrayItemsSort(arrSort))
-                        MessageBox.Show("Успешно сохранено!", "Успешно!");
-                Close();
-
+                if (TryGetArrayFromText(tbSortedArray.Text, out int[] arrSort, out string errSort) && arrSort.Length != 0)
+                {
+                    OperationWithDB.SaveOriginalArray(arr);
+                    OperationWithDB.InsertArrayItems(arr);
+                    if (OperationWithDB.SaveSortedArray(arrSort))
+                        if (OperationWithDB.InsertArrayItemsSort(arrSort))
+                            MessageBox.Show("Успешно сохранено!", "Успешно!");
+                    Close();
+                }
+                else
+                {
+                    SortArray();
+                    TryGetArrayFromText(tbSortedArray.Text, out int[] arrSort1, out string errSort1);
+                    OperationWithDB.SaveOriginalArray(arr);
+                    OperationWithDB.InsertArrayItems(arr);
+                    if (OperationWithDB.SaveSortedArray(arrSort1))
+                        if (OperationWithDB.InsertArrayItemsSort(arrSort1))
+                            MessageBox.Show("Успешно сохранено!", "Успешно!");
+                    Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Заполните массив", "Ошибка!");
             }
         }
 
-       
+        private void AddNewArray_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

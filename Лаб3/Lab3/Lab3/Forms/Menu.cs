@@ -18,10 +18,6 @@ namespace Lab3.Forms
             InitializeComponent();
         }
 
-        private void outFromProgramToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void outFromAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -37,9 +33,9 @@ namespace Lab3.Forms
         {
             if (UserHasArrays())
             {
-                label1.Text = "     Добро пожаловать!";
-                label2.Hide();
-                pictureBox1.Hide();
+                lblYouNoHaveArrays.Text = "     Добро пожаловать!";
+                lblAddNewArray.Hide();
+                pctrBoxStrelka.Hide();
                 myArraysToolStripMenuItem.Visible = true;
             }
             else
@@ -81,6 +77,11 @@ namespace Lab3.Forms
         private void Menu_Activated(object sender, EventArgs e)
         {
             UserHasArraysMenu();
+        }
+
+        private void outToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

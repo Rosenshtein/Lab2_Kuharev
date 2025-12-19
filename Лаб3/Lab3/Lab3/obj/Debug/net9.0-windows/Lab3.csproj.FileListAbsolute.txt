@@ -14,7 +14,6 @@ C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\D
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Registration.resources
-C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Aut.resources
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Forms.Menu.resources
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Properties.Resources.resources
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\bin\Debug\net9.0-windows\BouncyCastle.Cryptography.dll
@@ -35,3 +34,4 @@ C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\D
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\bin\Debug\net9.0-windows\BCrypt.Net-Next.dll
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Forms.AddNewArray.resources
 C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Forms.Help.resources
+C:\Users\rozhd\Desktop\Университет\Проги\Лаб3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.Autorization.resources

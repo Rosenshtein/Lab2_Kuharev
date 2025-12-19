@@ -21,7 +21,7 @@ namespace Lab3.Forms
 
         private void MyArrays_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = LoadTable(dtArrays);
+            dgwMyArrays.DataSource = LoadTable(dtArrays);
 
         }
 
@@ -32,10 +32,10 @@ namespace Lab3.Forms
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow == null) return;
+            if (dgwMyArrays.CurrentRow == null) return;
 
-            int arrayId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["array_id"].Value);
-            textBox1.Text = LoadArrayValuesAsText(arrayId);
+            int arrayId = Convert.ToInt32(dgwMyArrays.CurrentRow.Cells["array_id"].Value);
+            tBoxElements.Text = LoadArrayValuesAsText(arrayId);
         }
 
         private void MyArrays_FormClosed(object sender, FormClosedEventArgs e)
